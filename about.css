@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(100, 100, 100);
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.btn {
+  border: 1px solid white;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.btn2 {
+  padding: 5px 25px;
+  background-color: transparent;
+  border-radius: 25px;
+  background-color: cyan;
+  border: none;
+}
+
+.container .navbar {
+  background-color: rgba(145, 13, 13, 0.678);
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.container .navbar .navbar-left i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-left i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.container .navbar .navbar-right i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-right i:hover {
+  opacity: 1;
+}
+
+.navbar-right i {
+  float: right;
+}
+
+.dropdown-content {
+  background-color: rgba(145, 13, 13, 0.678);
+  margin-top: 1px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  display: none;
+}
+
+.dropdown-content:active {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 5px -5px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.dropdown-content a:hover {
+  opacity: 1;
+}
+
+.profile {
+  display: flex;
+  background-color: rgba(145, 13, 13, 0.678);
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.profile .img {
+  display: block;
+}
+
+.profile .img img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  width: 152px;
+  height: 152px;
+  margin-top: 40px;
+  border-radius: 100%;
+}
+
+.profile .img img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px 8px cyan;
+  transition: 0.5s ease all;
+}
+
+.profile .title {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+hr {
+  width: 95%;
+}
+
+.title {
+  font-family: "Croissant One", cursive;
+  line-height: 10px;
+}
+
+.description-title {
+  margin-top: 30px;
+}
+
+.description-title h1 {
+  margin: 10px 59px;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description-title li {
+  list-style: none;
+  margin: 20px;
+  font-family: "Mooli", sans-serif;
+}
+
+.description-title span {
+  color: rgb(235, 85, 85);
+}
+
+.description-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 48px;
+  justify-content: center;
+  position: relative;
+}
+
+.description-projects .project {
+  width: 40%;
+  overflow: hidden;
+  margin: 40px 40px;
+  border-radius: 25px;
+  transition: 0.5s ease all;
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+
+.description-projects .project:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px 8px cyan;
+}
+
+.description-projects .project-img {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.description-projects .project-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.description-projects .project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-text a {
+  text-decoration: none;
+}
+
+.description-projects .project:hover .project-text {
+  opacity: 1;
+}
+
+.description-projects .project-text h1,
+.description-projects .project-text p {
+  color: white;
+  padding: 5px;
+  margin: 0;
+}
+
+.design {
+  display: flex;
+  margin: 0 25px;
+  justify-content: center;
+}
+
+.design img {
+  display: flex;
+  width: 75%;
+}
+
+.description-header {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 845px) {
+  .description-projects .project {
+    width: 90%;
+    margin: 20px;
+  }
+  .description-projects .project .project-text {
+    overflow: auto;
+  }
+}

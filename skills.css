@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(100, 100, 100);
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.btn {
+  border: 1px solid white;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.container .navbar {
+  background-color: rgba(145, 13, 13, 0.678);
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.container .navbar .navbar-left i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-left i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.container .navbar .navbar-right i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-right i:hover {
+  opacity: 1;
+}
+
+.navbar-right i {
+  float: right;
+}
+
+.dropdown-content {
+  background-color: rgba(145, 13, 13, 0.678);
+  margin-top: 1px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  display: none;
+}
+
+.dropdown-content:active {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 5px -5px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.dropdown-content a:hover {
+  opacity: 1;
+}
+
+.profile {
+  display: flex;
+  background-color: rgba(145, 13, 13, 0.678);
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.profile .img {
+  display: block;
+}
+
+.profile .img img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  width: 152px;
+  height: 152px;
+  margin-top: 40px;
+  border-radius: 100%;
+}
+
+.profile .img img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px 8px cyan;
+  transition: 0.5s ease all;
+}
+
+.profile .title {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*! ------------------ */
+
+.img-skils {
+  background-image: url("https://picsum.photos/id/523/1920/1080");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bar-container {
+  width: 50%;
+  margin: auto;
+  border: 5px inset;
+  box-shadow: 1px 1px 5px 3px;
+  padding: 5px 10px;
+}
+
+.bar-flex {
+  margin-bottom: 10px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+}
+
+.bar.fill {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bar .tag {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.bar span {
+  font-weight: bold;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slide-in-right {
+  animation-name: slide-in-right;
+}
+
+.skils-profile {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-top: 20px;
+}
+.skils-profile img {
+  width: 151px;
+  height: 151px;
+  border-radius: 50%;
+}
+
+.skills-text {
+  text-align: center;
+  margin: 40px 25%;
+  position: absolute;
+  z-index: 1;
+  border: 5px inset;
+  box-shadow: 1px 1px 5px 3px;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-50-gt-sm {
+    width: 50%;
+  }
+}
