@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  background-color: rgba(160, 144, 144, 0.57);
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.btn {
+  border: 1px solid white;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.container .navbar {
+  background-color: rgba(145, 13, 13, 0.678);
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.container .navbar .navbar-left i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-left i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.container .navbar .navbar-right i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.container .navbar .navbar-right i:hover {
+  opacity: 1;
+}
+
+.navbar-right i {
+  float: right;
+}
+
+.dropdown-content {
+  background-color: rgba(145, 13, 13, 0.678);
+  margin-top: 1px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  display: none;
+}
+
+.dropdown-content:active {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 5px -5px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.dropdown-content a:hover {
+  opacity: 1;
+}
+
+.profile {
+  display: flex;
+  background-color: rgba(145, 13, 13, 0.678);
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.profile .img {
+  display: block;
+}
+
+.profile .img img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  width: 152px;
+  height: 152px;
+  margin-top: 40px;
+  border-radius: 100%;
+}
+
+.profile .img img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px 8px cyan;
+  transition: 0.5s ease all;
+}
+
+.profile .title {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*! -------------------  */
+
+.main-image {
+  background-image: url("img/arka-plan.png");
+}
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.left-container {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.left-container img {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  border: 1px inset black;
+  box-shadow: 1px 1px 5px 3px black;
+  border-radius: 25px;
+}
+
+.reels2 {
+  margin-top: 40%;
+}
+
+.reels3 {
+  margin-top: -25%;
+}
+
+.reels4 {
+  margin-top: 20%;
+}
+
+.reels5 {
+  margin-top: -25%;
+}
+
+.reels6 {
+  margin-top: 20%;
+}
+
+.right-container {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.right-desc1 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.right-desc2 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.right-desc3 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.right-desc4 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.right-desc5 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.right-desc6 {
+  background-color: gray;
+  border: 1px inset white;
+  box-shadow: 1px 1px 5px 3px;
+  margin: 10px;
+  height: 16%;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.reels-text {
+  text-align: center;
+  border: 3px inset black;
+  box-shadow: 1px 1px 10px 5px black;
+  margin: 0 40%;
+  margin-top: 25px;
+  outline: 2px outset red;
+  outline-offset: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: gray;
+  color: black;
+}
+
+@media (max-width: 991.98px) {
+  .right-container {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .right-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc1 {
+    overflow: auto;
+  }
+
+  .right-desc1::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc2 {
+    overflow: auto;
+  }
+
+  .right-desc2::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc3 {
+    overflow: auto;
+  }
+
+  .right-desc3::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc4 {
+    overflow: auto;
+  }
+
+  .right-desc4::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc5 {
+    overflow: auto;
+  }
+
+  .right-desc5::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-desc6 {
+    overflow: auto;
+  }
+
+  .right-desc6::-webkit-scrollbar {
+    display: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}

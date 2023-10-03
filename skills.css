@@ -6,6 +6,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   background-color: rgba(100, 100, 100);
   min-height: 100vh;
@@ -216,6 +221,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .flex-50-gt-sm {
-    width: 50%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bar-container {
+    margin-top: 320px;
   }
 }

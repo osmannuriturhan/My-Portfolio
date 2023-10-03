@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   background-image: url("https://picsum.photos/id/724/1920/1080");
   min-height: 100vh;
